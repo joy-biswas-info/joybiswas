@@ -1,18 +1,32 @@
 import Container from '@/Components/Container';
+import { Link } from '@inertiajs/react';
 import React from 'react';
 
 const Service = () => {
     return (
         <Container>
             <div className="grid grid-cols-2 h-[100vh]">
-                <div className='flex justify-center items-center bg-blue-400 hover:bg-primary rounded-tl-lg transition duration-500'>
-                    Wordpress Website                </div>
-                <div className='flex  justify-center items-center bg-gray-600 hover:bg-primary rounded-tr-lg  transition duration-500'>
-                    Laravel Website                </div>
-                <div className='flex justify-center items-center  bg-blue-700 hover:bg-primary rounded-bl-lg  transition duration-500'>
-                    Web Application                 </div>
-                <div className='flex justify-center items-center bg-red-300 hover:bg-primary rounded-br-lg  transition duration-500'>
-                    HTML Templete                </div>
+                <Link className='flex justify-center items-center bg-blue-400 hover:bg-primary rounded-tl-lg transition duration-500'>
+                    <div>
+                        <h2 className='text-2xl md:text-4xl font-bold'>Wordpress Website </h2>
+                    </div>
+                </Link>
+                <Link className='flex justify-center items-center bg-gray-400 hover:bg-primary rounded-tr-lg transition duration-500'>
+                    <div>
+                        <h2 className='text-2xl md:text-4xl font-bold'>Wordpress Website </h2>
+                    </div>
+                </Link>
+                <Link className='flex justify-center items-center bg-green-400 hover:bg-primary rounded-bl-lg transition duration-500'>
+                    <div>
+                        <h2 className='text-2xl md:text-4xl font-bold'>Wordpress Website </h2>
+                    </div>
+                </Link>
+                <Link className='flex justify-center items-center bg-red-400 hover:bg-primary rounded-br-lg transition duration-500'>
+                    <div>
+                        <h2 className='text-2xl md:text-4xl font-bold'>Wordpress Website </h2>
+                    </div>
+                </Link>
+
             </div>
         </Container>
     );
