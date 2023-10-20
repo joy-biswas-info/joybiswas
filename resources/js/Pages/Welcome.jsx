@@ -1,11 +1,14 @@
 import GuestNavigation from '@/Layouts/GuestNavigation';
 import { Link, Head } from '@inertiajs/react';
 import { useEffect, useState } from 'react';
-import About from './partials/About';
+import About from './Home/About';
 import Container from '@/Components/Container';
-import Portfolio from './partials/Portfolio';
-import Skills from './partials/Skills';
-import Service from './partials/Service';
+import Portfolio from './Home/Portfolio';
+import Skills from './Home/Skills';
+import Service from './Home/Service';
+import Faq from './Home/Faq';
+import Feedbck from './Home/Feedbck';
+import Contact from './Home/Contact';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const [counter, setCounter] = useState(1);
@@ -77,8 +80,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             <Portfolio />
             <Skills />
             <Service />
-
-
+            <Faq />
+            <Feedbck/>
+            <Contact/>
         </>
     );
 }

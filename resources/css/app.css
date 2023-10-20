@@ -58,3 +58,15 @@ body {
     transform: scale(1.02);
 
 }
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .accordion-content.active {
+    max-height: 200px;
+  }
+  
+ 
